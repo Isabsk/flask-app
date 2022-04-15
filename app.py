@@ -47,5 +47,5 @@ def list():
    return render_template("list.html",rows = rows)
 
 
-app.run(debug = True)
+app.run()
 
