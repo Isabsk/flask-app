@@ -21,7 +21,7 @@ def addrec():
          city = request.form['city']
          pin = request.form['pin']
          
-         with sql.connect("sqlite:///database.db") as con:
+         with sql.connect("database.db") as con:
             cur = con.cursor()
             cur.execute("INSERT INTO students (name,addr,city,pin) VALUES (?,?,?,?)",(nm,addr,city,pin) )
             
@@ -46,6 +46,7 @@ def list():
    rows = cur.fetchall(); 
    return render_template("list.html",rows = rows)
 
+if __name__ == "__main__":
+    app.run()
 
-app.run()
 
