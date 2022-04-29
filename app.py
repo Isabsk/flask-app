@@ -55,10 +55,10 @@ import psycopg2
 
 app = Flask(__name__)
 
-host = "ec2-34-192-210-139.compute-1.amazonaws.com"
-database = "d2i7q91fs596j9"
-user = "jtpeewohnbodnj"
-password = "79665d383895d2e0213a880e3a57d3fe725cbd38b4ea9bf93fbee6f2b872e0bc"
+host = "ec2-3-217-251-77.compute-1.amazonaws.com"
+database = "dfte8kcocghqd1"
+user = "jvpfbupfprpppg"
+password = "1962dbcac2400621ee34a21b2d193ff8de8dfc82f600c81daa67ba4c1d0a50ed"
 port = "5432"
 
 def initial():
